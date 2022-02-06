@@ -83,36 +83,14 @@ img {
 
 .quote-container {
     display: flex;
-    flex-direction: column;
+    color: white;
     background-color: gray;
+    font-size: 32px;
     align-items: center;
     justify-content: center;
     height: 200px;
 }
 
 .quote {
-    font-size: 32px;
-    color: white;
-    text-align: center;
-    margin: 32px 512px;
+    margin:10px;
 }
-
-.author {
-   display: flex;
-   flex-direction: row-reverse;
-   align-self: flex-end;
-   margin-right: 512px;
-   font-size: 24px;
-   font-weight: bold;;  
-}
-
-.sign-up {
-    margin: 32px;
-    display: flex;
-    height: 200px;
-    width: auto;
-    background-color: white;
-    justify-self: center;
-    align-self: center;
-}
-
