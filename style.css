@@ -6,17 +6,24 @@ body {
     padding: 0;
 }
 
-
+/* Top section of website */
 .top {
     background-color: aquamarine;
     display: flex;
     flex-direction: column;
+    border: 2px red solid;
+    /*
+    padding-left: 512px;
+    padding-right: 512px;*/
+    
 }
 
 header {
     display: flex;
     justify-content: space-between;
     margin: 16px 32px;
+    border: 2px red solid;
+
 }
 
 
@@ -34,8 +41,11 @@ a {
 
 .top-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin:64px 32px;
+    gap: 32px;
+    border: 2px red solid;
+
 }
 
 img {
@@ -50,6 +60,9 @@ img {
     padding: 5px 20px;
     border-radius: 4px;
 }
+
+
+/* ################################## */
 
 .cards {
     display: flex;
