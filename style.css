@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    font-family: Roboto, Helvetica, Futura, sans-serif;
+    font-family: Roboto, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,11 +9,12 @@ body {
 
 /* Top section of website */
 .top {
-    background-color: aquamarine;
+    background-color: rgb(158, 13, 0);
     display: flex;
     flex-direction: column;
     padding-left: 20vw;
     padding-right: 20vw;
+    color: white;
 }
 
 header {
@@ -33,6 +34,9 @@ ul {
 
 a {
     text-decoration: none;
+    color: white;
+    font-weight: 100;
+    font-size: 18px;
 }
 .header-logo {
     font-weight: 900;
@@ -43,24 +47,25 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 64px 0;
+    margin: 5em 0;
 }
 
-h1 {
-    margin: 0 128px 8px 0;
+.top-text div {
+    margin-right: 4em;
+    margin-bottom: 0;
     padding: 0;
     font-size: 48px;
     font-weight: 900;
 }
 
 .top-text p{
-    margin: 0 32px 8px 0;
+    margin: .5em 0 .5em 0;
     padding: 0;
     font-size: 18px;
 }
 
 img {
-    width: 300px;
+    width: 400px;
     height: auto;
 }
 
@@ -75,6 +80,8 @@ img {
 
 /* ################################## */
 
+/* ############## Cards ############# */
+
 .cards {
     display: flex;
     flex-direction: column;
@@ -84,7 +91,7 @@ img {
 .card-container {
     display: flex;
     gap : 64px;
-    margin: 32px;
+    margin-bottom: 64px;
 }
 
 .card-item img {
@@ -99,11 +106,21 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 150px;
 }
 .card-title {
-    font-size: 32px;
-    margin-top: 32px;
+    font-size: 36px;
+    font-weight: 900;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
+
+.card-item p {
+    font-size: 18px;
+    text-align: center;
+}
+
+/* ############## Quote ############ */
 
 .quote-container {
     display: flex;
@@ -111,26 +128,50 @@ img {
     color: black;
     background-color: gray;
     font-size: 32px;
+    font-weight: 100;
+    font-style: italic;
     align-items: center;
     justify-content: center;
     height: 200px;
-    padding: 32px 512px;
+    padding: 32px 25vw;
 }
 
 .author {
     align-self: flex-end;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 900;
+    margin-top: 1em;
 }
+
+/* ############# Sign-up ############*/
 
 .sign-up{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5vw;
     background-color: rgb(25, 144, 255);
-    margin: 32px 64px;
-    padding: 16px 32px;
+    margin: 4em 15vw;
+    padding: 3em 10em;  
+    color: white;
+    border-radius: 1em;
 }
+.sign-up-text div {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.sign-up p {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.sign-up .button {
+    border: solid 2px white;
+}
+
+/* ############## Footer ############ */
 
 footer {
     display: flex;
