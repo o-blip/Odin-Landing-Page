@@ -4,6 +4,7 @@ body {
     font-family: Roboto, Helvetica, Futura, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Top section of website */
@@ -11,19 +12,14 @@ body {
     background-color: aquamarine;
     display: flex;
     flex-direction: column;
-    border: 2px red solid;
-    /*
-    padding-left: 512px;
-    padding-right: 512px;*/
-    
+    padding-left: 20vw;
+    padding-right: 20vw;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    margin: 16px 32px;
-    border: 2px red solid;
-
+    margin-top: 1em;
 }
 
 
@@ -38,14 +34,29 @@ ul {
 a {
     text-decoration: none;
 }
+.header-logo {
+    font-weight: 900;
+    font-size: 24px;
+}
 
 .top-content {
     display: flex;
-    justify-content: center;
-    margin:64px 32px;
-    gap: 32px;
-    border: 2px red solid;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 64px 0;
+}
 
+h1 {
+    margin: 0 128px 8px 0;
+    padding: 0;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.top-text p{
+    margin: 0 32px 8px 0;
+    padding: 0;
+    font-size: 18px;
 }
 
 img {
