@@ -15,6 +15,7 @@ body {
     padding-left: 20vw;
     padding-right: 20vw;
     color: white;
+    flex: 1 1 0;
 }
 
 header {
@@ -23,7 +24,6 @@ header {
     margin-top: 1em;
     align-items: center;
 }
-
 
 ul {
     display: flex;
@@ -55,14 +55,19 @@ a {
 .top-content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     margin: 5em 0;
+    flex: auto;
+    width: 60vw;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+.top-text {
+    max-width: 530px;
 }
 
 .top-text div {
-    margin-right: 4em;
-    margin-bottom: 0;
-    padding: 0;
     font-size: 48px;
     font-weight: 900;
 }
@@ -73,9 +78,11 @@ a {
     font-size: 18px;
 }
 
-img {
-    width: 400px;
+.top-content img {
+    width: 350px;
     height: auto;
+    align-self: center;
+    flex: 1;
 }
 
 .button {
@@ -101,7 +108,9 @@ img {
 .card-container {
     display: flex;
     gap : 64px;
-    margin-bottom: 64px;
+    margin: 0 64px 64px 64px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card-item img {
