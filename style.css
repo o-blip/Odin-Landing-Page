@@ -79,7 +79,7 @@ a {
 }
 
 .top-content img {
-    width: 350px;
+    max-width: 550px;
     height: auto;
     align-self: center;
     flex: 1;
